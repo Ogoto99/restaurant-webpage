@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .menu-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+  </style>
+</head>
+<body>
+  <nav class="bg-gray-800 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white font-bold">Restaurant Name</a>
+      <div class="hidden md:flex space-x-4">
+        <a href="index.html" class="text-gray-300 hover:text-white">Home</a>
+        <a href="menu.html" class="text-gray-300 hover:text-white">Menu</a>
+        <a href="reserve.html" class="text-gray-300 hover:text-white">Reserve a Table</a>
+        <a href="book.html" class="text-gray-300 hover:text-white">Book a Room</a>
+        <a href="contact.html" class="text-gray-300 hover:text-white">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <header class="bg-cover bg-center h-64" style="background-image: url('assets/pexels-pixabay-260922.jpg');">
+    <div class="flex items-center justify-center h-full bg-gray-900 bg-opacity-50">
+      <h1 class="text-white text-4xl md:text-6xl font-bold">Our Menu</h1>
+    </div>
+  </header>
+  <section class="container mx-auto p-8">
+    <div class="mb-8">
+      <h2 class="text-3xl font-bold mb-4">Featured Dish</h2>
+      <div class="bg-white shadow-md rounded-lg p-4 flex flex-col md:flex-row items-center menu-card">
+        <img src="assets\pexels-chanwalrus-958545.jpg" alt="Featured Dish" class="w-full md:w-1/3 rounded-lg mb-4 md:mb-0">
+        <div class="md:ml-8">
+          <h3 class="text-2xl font-bold">Thali</h3>
+          <p class="text-gray-700 mt-2">This meal is a vibrant spread of Indian dishes that promise a rich culinary experience:</p>
+          <ol>
+            <li>Naan Bread: A basket of soft, chewy flatbread, perfect for scooping up sauces or curries.</li>
+            <li>Pakoras: Crispy, deep-fried fritters garnished with fresh herbs, served alongside a colorful salad mix of shredded carrots, cabbage, and lettuce.</li>
+            <li>Curries: Several bowls of thick, aromatic curries, each topped with julienned ginger and fresh cilantro for a burst of freshness.</li>
+            <li>Green Chutney: A small bowl of tangy, mint-cilantro chutney, ideal for dipping and complementing the spices.</li>
+          </ol>
+            <p>The variety of textures—from the crunch of pakoras to the softness of naan—and the blend of aromatic flavors make this a delightful dining experience!</p>
+          <p class="text-green-500 font-bold mt-2">$25.00</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2 class="text-3xl font-bold mb-4">Menu Categories</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Breakfast -->
+        <div class="bg-white shadow-md rounded-lg p-4 menu-card">
+          <h3 class="text-2xl font-bold mb-2">Breakfast</h3>
+          <ul>
+            <li class="border-b border-gray-200 py-2">
+              <span class="text-lg font-semibold">Pancakes</span>
+              <p class="text-gray-700">Fluffy pancakes served with maple syrup and butter.</p>
+              <img src="assets\pexels-ash-craig-122861-376464.jpg" alt="Pancakes" class="w-full h-auto rounded-lg mt-2">
+              <p class="text-green-500 font-bold">$8.00</p>
+            </li>
+            <li class="border-b border-gray-200 py-2">
+              <span class="text-lg font-semibold">Omelette</span>
+              <p class="text-gray-700">Three-egg omelette with your choice of fillings.</p>
+              <img src="assets\pexels-karina-ustiuzhanina-313369745-14122642.jpg" alt="Omelette" class="w-full h-auto rounded-lg mt-2">
+              <p class="text-green-500 font-bold">$10.00</p>
+            </li>
+            <!-- Add more breakfast items here -->
+          </ul>
+        </div>
+        <!-- Lunch -->
+        <div class="bg-white shadow-md rounded-lg p-4 menu-card">
+          <h3 class="text-2xl font-bold mb-2">Lunch</h3>
+          <ul>
+            <li class="border-b border-gray-200 py-2">
+              <span class="text-lg font-semibold">Caesar Salad</span>
+              <p class="text-gray-700">Crisp romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.</p>
+              <img src="assets\pexels-valeriya-13322849.jpg" alt="Caesar Salad" class="w-full h-auto rounded-lg mt-2">
+              <p class="text-green-500 font-bold">$12.00</p>
+            </li>
+            <li class="border-b border-gray-200 py-2">
+              <span class="text-lg font-semibold">Grilled Chicken Sandwich</span>
+              <p class="text-gray-700">Marinated grilled chicken breast served with lettuce, tomato, and mayo.</p>
+              <img src="assets\pexels-rajesh-tp-749235-1603898.jpg" alt="Grilled Chicken Sandwich" class="w-full h-auto rounded-lg mt-2">
+              <p class="text-green-500 font-bold">$14.00</p>
+            </li>
+            <!-- Add more lunch items here -->
+          </ul>
+        </div>
+        <!-- Dinner -->
+        <div class="bg-white shadow-md rounded-lg p-4 menu-card">
+          <h3 class="text-2xl font-bold mb-2">Dinner</h3>
+          <ul>
+            <li class="border-b border-gray-200 py-2">
+              <span class="text-lg font-semibold">Steak</span>
+              <p class="text-gray-700">Juicy steak cooked to your liking, served with mashed potatoes and vegetables.</p>
+              <img src="assets\pexels-mahmoud-salem-899704013-31064158.jpg" alt="Steak" class="w-full h-auto rounded-lg mt-2">
+              <p class="text-green-500 font-bold">$25.00</p>
+            </li>
+            <li class="border-b border-gray-200 py-2">
+              <span class="text-lg font-semibold">Pasta Primavera</span>
+              <p class="text-gray-700">Fresh pasta with seasonal vegetables and a light garlic sauce.</p>
+              <img src="assets\pexels-enginakyurt-1527603.jpg" alt="Pasta Primavera" class="w-full h-auto rounded-lg mt-2">
+              <p class="text-green-500 font-bold">$18.00</p>
+            </li>
+            <!-- Add more dinner items here -->
+          </ul>
+        </div>
+        <!-- Beverages -->
+        <div class="bg-white shadow-md rounded-lg p-4 menu-card">
+          <h3 class="text-2xl font-bold mb-2">Beverages</h3>
+          <ul>
+            <li class="border-b border-gray-200 py-2">
+              <span class="text-lg font-semibold">Fresh Juice</span>
+              <p class="text-gray-700">Choice of orange, apple, or mixed fruit juice.</p>
+              <img src="assets\pexels-pixabay-158053.jpg" alt="Fresh Juice" class="w-full h-auto rounded-lg mt-2">
+              <p class="text-green-500 font-bold">$5.00</p>
+            </li>
+            <li class="border-b border-gray-200 py-2">
+              <span class="text-lg font-semibold">Milkshake</span>
+              <p class="text-gray-700">Chocolate, vanilla, or strawberry milkshake.</p>
+              <img src="assets\pexels-horizon-content-2100060-3727250.jpg" alt="Milkshake" class="w-full h-auto rounded-lg mt-2">
+              <p class="text-green-500 font-bold">$6.00</p>
+            </li>
+            <!-- Add more beverages here -->
+          </ul>
+        </div>
+        <!-- Soft Drinks -->
+        <div class="bg-white shadow-md rounded-lg p-4 menu-card">
+          <h3 class="text-2xl font-bold mb-2">Soft Drinks</h3>
+          <ul>
+            <li class="border-b border-gray-200 py-2">
+              <span class="text-lg font-semibold">Cola</span>
+              <p class="text-gray-700">Chilled cola served with ice.</p>
+              <img src="assets\pexels-pixabay-50593.jpg" alt="Cola" class="w-full h-auto rounded-lg mt-2">
+              <p class="text-green-500 font-bold">$3.00</p>
+            </li>
+            <li class="border-b border-gray-200 py-2">
+              <span class="text-lg font-semibold">Lemonade</span>
+              <p class="text-gray-700">Refreshing lemonade served with a slice of lemon.</p>
+              <img src="assets\pexels-designbyja-1113500-2109099.jpg" alt="Lemonade" class="w-full h-auto rounded-lg mt-2">
+              <p class="text-green-500 font-bold">$4.00</p>
+            </li>
+            <!-- Add more soft drinks here -->
+          </ul>
+        </div>
+      <!-- Coffee/Tea -->
+<div class="bg-white shadow-md rounded-lg p-4 menu-card">
+  <h3 class="text-2xl font-bold mb-2">Coffee/Tea</h3>
+  <ul>
+    <li class="border-b border-gray-200 py-2">
+      <span class="text-lg font-semibold">Cappuccino</span>
+      <p class="text-gray-700">Espresso with steamed milk foam and a sprinkle of cocoa powder.</p>
+      <img src="assets\pexels-jayoke-851555.jpg" alt="Cappuccino" class="w-full h-auto rounded-lg mt-2">
+      <p class="text-green-500 font-bold">$5.00</p>
+    </li>
+    <li class="border-b border-gray-200 py-2">
+      <span class="text-lg font-semibold">Green Tea</span>
+      <p class="text-gray-700">Freshly brewed green tea with a hint of honey.</p>
+      <img src="assets\pexels-mareefe-1638280.jpg" alt="Green Tea" class="w-full h-auto rounded-lg mt-2">
+      <p class="text-green-500 font-bold">$4.00</p>
+    </li>
+    <!-- Add more coffee/tea items here -->
+  </ul>
+</div>
+<!-- Desserts -->
+<div class="flex justify-center">
+  <div class="bg-white shadow-md rounded-lg p-4 menu-card">
+    <h3 class="text-2xl font-bold mb-2">Desserts</h3>
+    <ul>
+      <li class="border-b border-gray-200 py-2">
+        <span class="text-lg font-semibold">Chocolate Cake</span>
+        <p class="text-gray-700">Rich chocolate cake with a layer of ganache and chocolate shavings.</p>
+        <img src="assets\pexels-abhinavcoca-291528.jpg" alt="Chocolate Cake" class="w-full h-auto rounded-lg mt-2">
+        <p class="text-green-500 font-bold">$7.00</p>
+      </li>
+      <li class="border-b border-gray-200 py-2">
+        <span class="text-lg font-semibold">Cheesecake</span>
+        <p class="text-gray-700">Creamy cheesecake with a graham cracker crust and fruit topping.</p>
+        <img src="assets\pexels-suzyhazelwood-1098592.jpg" alt="Cheesecake" class="w-full h-auto rounded-lg mt-2">
+        <p class="text-green-500 font-bold">$8.00</p>
+      </li>
+      <!-- Add more dessert items here -->
+    </ul>
+  </div>
+</div>
+    </div>
+  </section>
+  <footer class="bg-gray-800 p-4 mt-8">
+    <div class="container mx-auto text-center text-gray-300">
+      <p>&copy; 2025 Restaurant Name. All rights reserved.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+          <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+          <i class="fab fa-twitter"></i> Twitter
+        </a>
+        <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </div>
+      <div class="mt-4">
+        <p>Contact Us:</p>
+        <p>Email: <a href="mailto:ogotomelekh99@gmail.com" class="text-gray-300 hover:text-white transition duration-300">Email Us</a></p>
+        <p>Phone: <a href="tel:0711572379" class="text-gray-300 hover:text-white transition duration-300">Call Us</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

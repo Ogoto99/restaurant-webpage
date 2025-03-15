@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Receipt</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        // Function to populate the receipt details
+        function generateReceipt() {
+            const guestName = localStorage.getItem("guestName") || "John Doe";
+            const email = localStorage.getItem("email") || "johndoe@example.com";
+            const phone = localStorage.getItem("phone") || "+123-456-7890";
+            const roomType = localStorage.getItem("roomType") || "Single Room";
+            const roomNumber = localStorage.getItem("roomNumber") || "101";
+            const checkInDate = localStorage.getItem("checkInDate") || "2025-04-14";
+            const checkOutDate = localStorage.getItem("checkOutDate") || "2025-04-16";
+            const amountPaid = localStorage.getItem("amountPaid") || "$100";
+
+            document.getElementById("guestName").textContent = guestName;
+            document.getElementById("email").textContent = email;
+            document.getElementById("phone").textContent = phone;
+            document.getElementById("roomType").textContent = roomType;
+            document.getElementById("roomNumber").textContent = roomNumber;
+            document.getElementById("checkInDate").textContent = checkInDate;
+            document.getElementById("checkOutDate").textContent = checkOutDate;
+            document.getElementById("amountPaid").textContent = amountPaid;
+        }
+
+        // Trigger the function on page load
+        window.onload = generateReceipt;
+    </script>
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-md mx-auto my-10 bg-white p-6 rounded-lg shadow-md">
+        <div class="text-center mb-6">
+            <h2 class="text-2xl font-bold">SAVORKENYA</h2>
+            <p class="text-gray-600">Booking Receipt</p>
+        </div>
+        <div class="mb-6">
+            <p><strong>Booking Confirmation:</strong> Successfully Booked</p>
+            <p><strong>Hotel Name:</strong> SAVORKENYA</p>
+            <p><strong>Guest Name:</strong> <span id="guestName"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Phone:</strong> <span id="phone"></span></p>
+            <p><strong>Room Type:</strong> <span id="roomType"></span></p>
+            <p><strong>Room Number:</strong> <span id="roomNumber"></span></p>
+            <p><strong>Check-in Date:</strong> <span id="checkInDate"></span></p>
+            <p><strong>Check-out Date:</strong> <span id="checkOutDate"></span></p>
+            <p><strong>Amount Paid:</strong> <span id="amountPaid"></span></p>
+        </div>
+        <div class="text-center mt-6">
+            <p>Thank you for choosing SAVORKENYA!</p>
+            <p class="text-gray-600">&copy; 2025 SAVORKENYA. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
